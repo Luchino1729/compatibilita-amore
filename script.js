@@ -8,25 +8,31 @@ function calcolaAmore() {
 
     risultatoDiv.classList.remove("hidden");
     percentualeSpan.innerText = "...";
-    testo.innerText = "Sto analizzando il vostro amore hehe...";
+    testo.innerText = "Sto analizzando il vostro amore mlml hehe...";
 
-    // nomi
     const tuoiNomi = ["luca", "luchino", "amore", "tesoro", "pookie", "cavaliere", "orsetto", "micione", "riccetto", "polpo camicia anello"];
     const suoiNomi = ["mari", "mari leti", "maria letizia", "amore", "tesoro", "pookie", "principessa", "gattina", "polpo fiocco anello"];
 
     setTimeout(() => {
         let percentuale;
+        
+        // Verifichiamo se ALMENO UNO dei due nomi è nella vostra lista
+        const solouno = tuoiNomi.includes(nome1) || suoiNomi.includes(nome1) || 
+                                 tuoiNomi.includes(nome2) || suoiNomi.includes(nome2);
+        
+        // Verifichiamo se siete PROPRIO VOI DUE insieme
+        const entrambi = (tuoiNomi.includes(nome1) && suoiNomi.includes(nome2)) || 
+                            (tuoiNomi.includes(nome2) && suoiNomi.includes(nome1));
 
-        const match =
-            (tuoiNomi.includes(nome1) && suoiNomi.includes(nome2)) ||
-            (tuoiNomi.includes(nome2) && suoiNomi.includes(nome1));
-
-        if (match) {
+        if (entrambi) {
             percentuale = 100;
-            testo.innerText = "Amore vero e immenso!!!! ❤️";
+            testo.innerText = "Amore vero e immenso hehe omg omg!!!! ❤️";
+        } else if (solouno) {
+            percentuale = Math.floor(Math.random() * 30);
+            testo.innerText = "GIRL ma chi è questo/a?????";
         } else {
-            percentuale = Math.floor(Math.random() * 60);
-            testo.innerText = "Damn, forse non è destino... 💔";
+            percentuale = 90; 
+            testo.innerText = "Siete fatti l'uno per l'altro! (ma noi siamo i migliori hehe)";
         }
 
         percentualeSpan.innerText = percentuale + "%";
