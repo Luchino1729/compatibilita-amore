@@ -10,17 +10,15 @@ function calcolaAmore() {
     percentualeSpan.innerText = "...";
     testo.innerText = "Sto analizzando il vostro amore mlml hehe...";
 
-    const tuoiNomi = ["luca", "luchino", "amore", "tesoro", "pookie", "cavaliere", "orsetto", "micione", "riccetto", "polpo camicia anello"];
-    const suoiNomi = ["mari", "mari leti", "maria letizia", "amore", "tesoro", "pookie", "principessa", "gattina", "polpo fiocco anello"];
+    const tuoiNomi = ["luca", "luchino", "amore", "tesoro", "pookie", "cavaliere", "orsetto", "micione", "riccetto", "polpo camicia anello", "tesorino", "usband", "marito", "pasticcino", "pookie"];
+    const suoiNomi = ["mari", "mari leti", "maria letizia", "amore", "tesoro", "pookie", "principessa", "gattina", "polpo fiocco anello", "tesorino", "wif", "moglie", "fiorellino alla nutella", "koalino"];
 
     setTimeout(() => {
         let percentuale;
         
-        // Verifichiamo se ALMENO UNO dei due nomi è nella vostra lista
         const solouno = tuoiNomi.includes(nome1) || suoiNomi.includes(nome1) || 
                                  tuoiNomi.includes(nome2) || suoiNomi.includes(nome2);
         
-        // Verifichiamo se siete PROPRIO VOI DUE insieme
         const entrambi = (tuoiNomi.includes(nome1) && suoiNomi.includes(nome2)) || 
                             (tuoiNomi.includes(nome2) && suoiNomi.includes(nome1));
 
