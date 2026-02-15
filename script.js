@@ -10,8 +10,8 @@ function calcolaAmore() {
     percentualeSpan.innerText = "...";
     testo.innerText = "Sto analizzando il vostro amore mlml hehe...";
 
-    const tuoiNomi = ["luca", "luchino", "amore", "tesoro", "pookie", "cavaliere", "orsetto", "micione", "riccetto", "polpo camicia anello", "tesorino", "usband", "marito", "pasticcino"];
-    const suoiNomi = ["mari", "mari leti", "maria letizia", "amore", "tesoro", "pookie", "principessa", "gattina", "polpo fiocco anello", "tesorino", "wif", "moglie", "fiorellino alla nutella"];
+    const tuoiNomi = ["luca", "luchino", "amore", "tesoro", "pookie", "cavaliere", "orsetto", "micione", "riccetto", "polpo camicia anello", "tesorino", "usband", "marito", "pasticcino", "pookie"];
+    const suoiNomi = ["mari", "mari leti", "maria letizia", "amore", "tesoro", "pookie", "principessa", "gattina", "polpo fiocco anello", "tesorino", "wif", "moglie", "fiorellino alla nutella", "koalino"];
 
     setTimeout(() => {
         let percentuale;
